@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+    padding:0;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
+#room{
+    margin: 0;
+    padding: 0;
+    width: 1440px;
+    height: 900px;
+    background-image: url("assets/room.png");
+}
+ #room > *{
+
+    position: absolute;
+    margin: 0;
+    padding: 0;
+ }
+
+#door{
+   top:-12px;
+   left:-280px;
+   cursor: grabbing;
+}
+#lock{
+    top:348px;
+    left:866px;
+    width:70px;
+    height: 80px;
+    cursor: url(key.png), auto;
+
+}
+
+#keylock{
+    top:450px;
+    left:880px;
+    width:30px;
+    height: 50px;
+    border-radius: 10px;
+}
+#key{
+    top:780px;
+    left:1000px;
+    width:90px;
+    height: 60px;
+    cursor: grab;
+
+}
+#escape{
+    width: 250px;
+    height:100px;
+    font-size:30px;
+    font-family: monospace;
+    border-radius: 20px;
+    visibility: hidden;
+}
