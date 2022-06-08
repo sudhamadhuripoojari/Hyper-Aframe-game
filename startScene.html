@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <script src="https://unpkg.com/aframe@latest"></script>
+    <script src="https://aframe.io/release/1.0.4/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component"></script>
+    <script src="https://unpkg.com/aframe-extras@6.1.0/dist/aframe-extras.loaders.min.js"></script>
+    <script src="https://unpkg.com/three@0.124.0/examples/js/libs/inflate.min.js"></script>
+  </head>
+  <body>
+    <a-scene loading-screen="dotsColor: red; backgroundColor: black; environment= preset: forest">
+        <!-- <a-entity camera position=" -145 1.6 -6" wasd-controls></a-entity> -->
+        <a-entity id="world"></a-entity>
+        <a-entity environment></a-entity>
+       
+        <a-entity environment="lightPosition: 1 5 -2; groundColor: #268240"></a-entity>
+        <a-entity environment="preset: forest; groundColor: #124721; groundColor2: #124721; dressing:trees; groundTexture: none; "></a-entity>
+        <a-gltf-model src="./assets/Easter rabbit.glb" position="1 0.5 0"  animation__radius="property: radius; from: 0; to: 20"></a-gltf-model> 
+        <a-entity gltf-model="src: url(./assets/Easter rabbit.glb);" scale="2 2 1" position="3 0.5 2" ></a-entity>     
+        <a-gltf-model src="./assets/Cottage.glb" position="10 0.5 -1" scale="3 5 2"> </a-gltf-model> 
+        <a-gltf-model src="./assets/Mushrooms.glb" position="-1 1 -2" scale="2 5 1"> </a-gltf-model> 
+        <a-gltf-model src="./assets/Mushroom.glb" position="-3 0 -2" scale="0.1 0.3 0.1"> </a-gltf-model> 
+        <a-gltf-model src="./assets/Mushroom.glb" position="-6 0 2" scale="0.1 0.1 0.1"> </a-gltf-model> 
+        <a-gltf-model src="./assets/Tree.glb" position="1 2 -1"> </a-gltf-model>
+        <a-gltf-model src="./assets/Tree.glb" position="-1 8 -5" scale="2 5 1"> </a-gltf-model>
+        <a-gltf-model src="./assets/Tree.glb" position="-5 2 5" > </a-gltf-model>
+        <a-gltf-model src="./assets/Tree.glb" position="7 2 -3"> </a-gltf-model>
+        <a-gltf-model src="./assets/Rock.glb" position="-3 0 -1"> </a-gltf-model>
+        <a-entity fbx-model="src: url(./assets/Sitting.fbx);"  position="-3 0.5 -1" scale="0.01 0.01 0.01" animation-mixer="clip: *; "></a-entity>
+        <a-entity fbx-model="src: url(./assets/Running.fbx);"  position="-3 0.5 -8" scale="0.01 0.01 0.01" animation-mixer="clip: *; " animation= "property: position; to: -6 0.5 8; dur: 15000; easing: linear; loop: false"></a-entity>
+
+        <!-- <a-entity fbx-model="src: url(./assets/Sleeping Idle.fbx);"  position="-3 0 1.4" scale="0.01 0.01 0.01" animation-mixer="clip: *; "></a-entity>   -->
+        
+        
+
+    </a-scene>
+  </body>  
+
+</html
